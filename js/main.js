@@ -1,26 +1,39 @@
-const inputMail=document.getElementById("inputmail");
-console.log(inputMail);
 
-let variousMail=[
-    "giovannirossi3@gmail.com",
-    "andreasorbillo2@gmail.com",
-    "alexbinando1@gmail.com",
-    "giuliocesare@yahoo.it",
-    "alicecastello16@yahoo.it"
-]
+const buttonGenera=document.getElementById("genera");
+console.log(buttonGenera);
 
-for (let i=0;i < variousMail.length;i++){
-    const currentMail=variousMail[i];
-    console.log(currentMail);
-    
-    if(i>currentMail ==0){
-        const insertMail=("Accesso abilitato");
-        console.log(insertMail);
-    }else{
-        const wrongMail=("Accesso negato");
-        console.log(wrongMail);
+
+buttonGenera.addEventListener(
+    'click',
+    function(click){
+        const inputMail = document.getElementById("inputmail").value;
+        console.log("La mail inserita è", inputMail);
+
+        let variousMail = [
+            "giovannirossi3@gmail.com",
+            "andreasorbillo2@gmail.com",
+            "alexbinando1@gmail.com",
+            "giuliocesare@yahoo.it",
+            "alicecastello16@yahoo.it"
+        ]
+        
+
+        for (let i=0;i < variousMail.length,i++;){
+        console.log(variousMail[i]);
+
+        if (i==inputMail==0){
+             const rightmail=("Accesso consentito");
+             console.log(rightmail);
+        }else{
+            const wrongmail=("Accesso deviato");
+            console.log(wrongmail);
+        }
+        }
+
     }
 
+);
 
-}
+
+
 
