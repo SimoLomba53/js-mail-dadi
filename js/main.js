@@ -8,7 +8,6 @@ const buttonGenera=document.getElementById("genera");
 console.log(buttonGenera);
 
 
-
 buttonGenera.addEventListener(
     'click',
     function(click){
@@ -24,9 +23,9 @@ buttonGenera.addEventListener(
         ]
 
         for (let i=0;i < variousMail.length;i++){
-        console.log(variousMail[i]);
+        console.log(inputmail==variousMail.length[i]);
 
-        if (i==inputMail){
+        if (variousMail[i]==inputMail){
              const rightmail=("Accesso consentito");
              console.log(rightmail);
         }else{
