@@ -1,6 +1,12 @@
-
+//COLLEGO IL BOTTONE E FACCIO SI CHE VENGA VISUALIZZATO IN CONSOLE
+//GLI DO UNA FUNZIONE
+//INDIVIDUO DOVE VIENE INSERITA LA MAIL
+//INDICO CON ARRAY LE VARIE MAIL
+//CON FOR INDICO DOVE DEVONO ESSERE CERCATE LE MAIL
+//CON LE IF INDICO I COMANDI DA ESEGUIRE IN CASO LA MAIL FOSSE PRESENTE O NO
 const buttonGenera=document.getElementById("genera");
 console.log(buttonGenera);
+
 
 
 buttonGenera.addEventListener(
@@ -16,12 +22,11 @@ buttonGenera.addEventListener(
             "giuliocesare@yahoo.it",
             "alicecastello16@yahoo.it"
         ]
-        
 
-        for (let i=0;i < variousMail.length,i++;){
+        for (let i=0;i < variousMail.length;i++){
         console.log(variousMail[i]);
 
-        if (i==inputMail==0){
+        if (i==inputMail){
              const rightmail=("Accesso consentito");
              console.log(rightmail);
         }else{
