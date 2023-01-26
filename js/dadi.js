@@ -23,13 +23,13 @@ buttonCrea.addEventListener(
         playerInput.innerHTML=randomNumberPlayer;
 
 
-        if(randomNumberPc > randomNumberPlayer){
+            if(randomNumberPc > randomNumberPlayer){
             const pcWin=("Vince il PC");
-            console.log(pcWin);
-        }if(randomNumberPc<randomNumberPlayer){
+            console.log(pcWin);}
+            if(randomNumberPc < randomNumberPlayer){
             const playerWin=("Vince il Player");
             console.log(playerWin);
-        }else{
+            }if(randomNumberPc==randomNumberPlayer){
             const pari=("La partità termina in parità");
             console.log(pari);
         }
